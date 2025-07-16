@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> portfolio</title>
+    <meta name="description" content="Personal portfolio of John Doe, Web Developer">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind config for customizations -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1E40AF',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-xl font-bold text-primary">Saikat.</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#about" class="hover:text-primary transition">About</a>
+                    <a href="#projects" class="hover:text-primary transition">Projects</a>
+                    <a href="#contact" class="hover:text-primary transition">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 hover:text-primary transition">Home</a>
+            <a href="#about" class="block py-2 hover:text-primary transition">About</a>
+            <a href="#projects" class="block py-2 hover:text-primary transition">Projects</a>
+            <a href="#contact" class="block py-2 hover:text-primary transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen pt-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-4 py-12 md:py-24 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm <span class="text-primary">Saikat bera.</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Web Developer & Designer</h2>
+                <p class="text-lg mb-8 text-gray-600">Building digital experiences that matter. <br> 
+                    <span class="italic">"Code is poetry."</span></p>
+                <a href="#" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">
+                    Download Resume
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="images/avatar.png" alt="John Doe" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-primary shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Who I Am</h3>
+                    <p class="mb-4 text-justify">I'm a passionate web developer with 1 years of experience creating modern, responsive websites and web applications. I specialize in front-end development but also enjoy working with full-stack technologies.</p>
+                    <p class="mb-4 text-justify" >When I'm not coding, you can find me hiking in the mountains, reading sci-fi novels, or experimenting with new recipes in the kitchen. I believe in continuous learning and staying updated with the latest web technologies.</p>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-semibold mb-4 text-primary">My Skills</h3>
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">HTML5</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">CSS3</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Git</span>
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">Responsive Design</span>
+                    </div>
+                    
+                    <h3 class="text-3xl font-semibold mb-4 text-primary">Education </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">Bachelor's in Computer Science</h4>
+                            <p class="text-gray-600">Techno Main Salt Lake ,2024-2028</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">Higher Secondary Examination</h4>
+                            <p class="text-gray-600">2023</p>
+                            <p class="text-gray-600">Grade : 75.2</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <h4 class="font-semibold">Secondary Examination</h4>
+                            <p class="text-gray-600">2021</p>
+                            <p class="text-gray-600">Grade : 95.5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
+                    <img src="images/project1.png" alt="E-commerce Website" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">object Detection app</h3>
+                        <p class="text-gray-600 mb-4">A real-time object detection web application that uses TensorFlow.js and the COCO-SSD model to detect people in video streams from your webcam. Features dark/light mode toggle, adjustable confidence thresholds, and resolution settings.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">React</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">Node.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">MongoDB</span>
+                        </div>
+                        <a href="https://saikat-bera04.github.io/object-detection-website/" class="text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
+                    <img src="images/project2.png" alt="Task Management App" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">TASKLY</h3>
+                        <p class="text-gray-600 mb-4">A productivity app for organizing tasks with drag-and-drop functionality.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">Vue.js</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">Firebase</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">Tailwind CSS</span>
+                        </div>
+                        <a href="https://saikat-bera04.github.io/taskly-todo-website/" class="text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 hover:scale-105">
+                    <img src="images/project3.png" alt="Weather Dashboard" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">WINDY</h3>
+                        <p class="text-gray-600 mb-4">
+A beautiful, interactive weather application that provides real-time weather data for any location worldwide. Built with HTML, CSS, and JavaScript, this app features a stunning glassmorphism UI design with animated elements.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">JavaScript</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">API Integration</span>
+                            <span class="bg-gray-100 px-2 py-1 rounded text-sm">CSS3</span>
+                        </div>
+                        <a href="https://saikat-bera04.github.io/windy-weather-app/" class="text-primary hover:underline">View on GitHub →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Get In Touch</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <form class="bg-white p-6 rounded-lg shadow-md">
+                         <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border" placeholder="Your name" type="text"/>
+                    </div>
+                    <div>
+                     <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                     <input class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border" placeholder="sample@gmail.com" type="text"/>
+                    </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-2 px-6 rounded-lg transition duration-300 w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2 bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-primary">Contact Information</h3>
+                    <p class="mb-6">Feel free to reach out for collaborations or just to say hello!</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-4 text-xl"></i>
+                            <span>work.saikatbera@gmail.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-4 text-xl"></i>
+                            <span>+91 9933591297</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-primary mr-4 text-xl"></i>
+                            <span>Kolkata , West Bengal</span>
+                        </div>
+                    </div>
+                    
+                    <h3 class="text-xl font-semibold mt-8 mb-4 text-primary">Connect With Me</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Saikat-Bera04" class="text-gray-700 hover:text-primary transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/saikat-bera-a62b68274/" class="text-gray-700 hover:text-primary transition text-2xl">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com/SaikatBera9933" class="text-gray-700 hover:text-primary transition text-2xl">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_error.404.out/" class="text-gray-700 hover:text-primary transition text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Saikat Bera. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Built with HTML and Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
