@@ -3,7 +3,7 @@
 
 Welcome to my professional portfolio - a showcase of my skills, projects, and journey as a web developer. This responsive website serves as my digital identity, crafted with modern web technologies to demonstrate my capabilities in front-end development.
 
- [🔗 Go Live](https://saikat-bera04.github.io/tailwind-bootcamp-portfolio/#contact)
+ [# Go Live ](https://saikat-bera04.github.io/tailwind-bootcamp-portfolio/#contact)
 
 ## About This Project
 
